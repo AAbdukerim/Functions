@@ -1,0 +1,38 @@
+public class StringManipulation{
+    public static void main(String[] args){
+		
+		String firstName=new String("Murodil");
+		String lastName="Ruzimatov";
+		String fullName=firstName+" "+lastName;
+
+		System.out.println("My name is "+ firstName);
+
+		// 1)print your full name in all uppercase
+		System.out.println(fullName.toUpperCase() );
+
+		// 2)Print number of characters in your firstname
+		// then lastname. length()
+
+		int firstNameLength=firstName.length();
+		int lastNameLength=lastName.length();
+		System.out.println("My firstName length:"+firstNameLength);
+		System.out.println("My lastName length:"+lastNameLength);
+
+		//Using string method print your initials.charAt()
+		System.out.print(firstName.charAt(0));
+		System.out.println(lastName.charAt(0));
+		
+		String initials=firstName.charAt(0)+""+lastName.charAt(0);
+		System.out.println(initials);
+	
+		//Find the position of a particular letter or worn in the string.
+		//Murodil - i want to find out the position of letter o
+		//indexOf
+		System.out.println(firstName.indexOf("M"));
+		System.out.println(fullName.indexOf(" "));
+		// check if lastname equals to Smith. equals
+		boolean bool=lastName.equals("Ruzimatov");
+		System.out.println("is lastname Ruzimatov? - " + bool);
+
+	}
+}
