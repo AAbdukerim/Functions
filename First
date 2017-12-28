@@ -1,0 +1,21 @@
+package simplepolymorephicprogram;
+
+public class Game {
+	
+	public boolean pingPong() {
+			System.out.println("Ping pong starting");
+			return true;
+		}
+		
+		public boolean soccer() {
+			System.out.println("Soccer is starting");
+			return true;
+		}
+		
+		public boolean chess() {
+			System.out.println("Chess starting");
+			return true;
+		}
+		
+		
+	}
